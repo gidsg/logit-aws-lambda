@@ -8,9 +8,13 @@ var zlib = require('zlib');
 // See more at: https://service.sumologic.com/help/Default.htm#Collector_Management_API.htm
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var options = { 'hostname': 'endpoint1.collection.sumologic.com',
-                'path': 'https://endpoint1.collection.sumologic.com/receiver/v1/http/<XXXX>',
-                'method': 'POST'
+var options = { 'hostname': 'api.logit.io',
+                'path': 'https://api.logit.io/v2',
+                'method': 'POST',
+                'headers': {
+                       "apikey": process.env.LOGIT_API_KEY,
+                       "content-type": "application/json"
+                  }
             };
 
 
