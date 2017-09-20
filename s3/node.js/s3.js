@@ -12,7 +12,7 @@ var options = { 'hostname': 'api.logit.io',
                 'path': 'https://api.logit.io/v2',
                 'method': 'POST',
                 'headers': {
-                       "apikey": process.env.LOGIT_API_KEY,
+                       "ApiKey": process.env.LOGIT_API_KEY,
                        "content-type": "application/json"
                   }
             };
